@@ -1,3 +1,5 @@
+library animated_icon_theme;
+
 import 'package:flutter/widgets.dart';
 
 /// A widget that animates the icon theme data implicitly.
