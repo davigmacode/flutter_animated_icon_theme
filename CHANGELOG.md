@@ -1,3 +1,7 @@
+## 1.0.3
+
+* Include example in package archive.
+
 ## 1.0.2
 
 * Reduces package size.
