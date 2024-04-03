@@ -12,16 +12,12 @@ class AnimatedIconTheme extends ImplicitlyAnimatedWidget {
 
   /// Creates an animated icon theme
   const AnimatedIconTheme({
-    Key? key,
-    Curve curve = Curves.linear,
-    Duration duration = const Duration(milliseconds: 200),
+    super.key,
+    super.curve,
+    super.duration = const Duration(milliseconds: 200),
     required this.data,
     required this.child,
-  }) : super(
-          key: key,
-          curve: curve,
-          duration: duration,
-        );
+  });
 
   /// Creates an [AnimatedIconTheme] that controls the style of
   /// descendant widgets, and merges in the current [AnimatedIconTheme], if any.
@@ -87,8 +83,7 @@ class IconThemeDataTween extends Tween<IconThemeData> {
   /// The [begin] and [end] properties must be non-null before the tween is
   /// first used, but the arguments can be null if the values are going to be
   /// filled in later.
-  IconThemeDataTween({IconThemeData? begin, IconThemeData? end})
-      : super(begin: begin, end: end);
+  IconThemeDataTween({super.begin, super.end});
 
   @override
   IconThemeData lerp(double t) => IconThemeData.lerp(begin!, end!, t);

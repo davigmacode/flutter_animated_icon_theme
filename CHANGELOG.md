@@ -1,3 +1,8 @@
+## 1.0.4
+
+* Adjust sdk constraints
+* Use super parameter
+
 ## 1.0.3
 
 * Include example in package archive.
